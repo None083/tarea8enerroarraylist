@@ -90,5 +90,18 @@ public class CarasDado {
 
         return contadorCara;
     }
+    
+    public void borrarCara(int cara) {
+        
+        if (cara > 1 && cara < NUM_CARAS) {
+            for (int i = 0; i < this.listaEnteros.size(); i++) {
+                if (this.listaEnteros.get(i) == cara) {
+                    this.listaEnteros.remove(i);
+                }
+            }
+        } else{
+            System.out.println("Esa cara no existe");
+        }
+    }
 
 }

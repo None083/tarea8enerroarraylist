@@ -24,7 +24,11 @@ public class Main {
         
         //Cuantas veces ha salido una cara
         int numAaparicionesCara = listaTiradas2.numAparicionesCara(2);
-        System.out.println(numAaparicionesCara);
+        System.out.println(numAaparicionesCara + "\n");
+        
+        //Borrar cara de la lista
+        listaTiradas2.borrarCara(2);
+        System.out.println(listaTiradas2);
         
     }
 }
