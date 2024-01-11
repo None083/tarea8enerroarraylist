@@ -43,6 +43,8 @@ public class ListasLetras {
         System.out.println("Lista diferencias: ");
         listaLetras3.stream().forEach(e -> System.out.println(e));
         
+        //ArrayList<String> listaLetras4 =
+        
     }
     
     public static ArrayList<String> generadorListaLetras(){
@@ -69,6 +71,12 @@ public class ListasLetras {
                 }
             }
         }
+        return nuevaLista;
+    }
+    
+    public static ArrayList<String> listaDiferencias2(ArrayList<String> lista1, ArrayList<String> lista2){
+        ArrayList<String> nuevaLista = lista1;
+        nuevaLista.removeAll(lista2);
         return nuevaLista;
     }
     
